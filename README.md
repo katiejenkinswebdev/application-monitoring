@@ -16,7 +16,9 @@ Also called the Empower Plant UI/UX. This project was bootstrapped with [Create 
 | sentry-logback | 5.5.1 |
 
 ## Setup
-1. Permit your IP address in CloudSQL.
+1. Permit your IP address in CloudSQL. 
+- Google "What's my IP address?" 
+- Slack Simon Zhong with your IP address in IPv4 CIDR (slash) notation (e.g. 200.27.123.0/24)
 2. Copy `env-config/local.env` from the private fork, [application-monitoring-deploy](https://github.com/sentry-demos/application-monitoring-deploy/tree/master/env-config), or, if you don't have access to it, follow `env-config/example.env`.
 4. The `REACT_APP_FLASK_BACKEND` in `env-config/*.env` points to the backend instance deployed to AppEngine, the same one used by the cloud-hosted React web app. Flask is the default backend. If you expect to run other backend types, add values for those in `env-config/*.env` as well (i.e. `REACT_APP_EXPRESS_BACKEND`).
 
